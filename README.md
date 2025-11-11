@@ -15,12 +15,13 @@ The program provides various methods to analyze export data, including:
 
 ## Project Structure
 ExportDataParser/
+
 ├─ ExportDataParser.java
+
 ├─ exportdata.csv (full dataset)
+
 └─ .gitignore (ignores *.class and *.jar files)
 
-yaml
-Copy code
 
 ---
 
@@ -38,21 +39,18 @@ Copy code
 2. Make sure the JARs are in a `libs/` folder inside your project:  
 
 libs/edu-duke.jar
+
 libs/commons-csv-1.10.0.jar
 
-bash
-Copy code
 
 3. Compile the program:
-
-```bash
 javac -cp ".;libs/edu-duke.jar;libs/commons-csv-1.10.0.jar" ExportDataParser.java
-Run the program:
 
-bash
-Copy code
+4. Run the program:
 java -cp ".;libs/edu-duke.jar;libs/commons-csv-1.10.0.jar" ExportDataParser
+
 Features / Methods
+
 countryInfo(CSVParser parser, String country) – Returns info about a country.
 
 listExportersTwoProducts(CSVParser parser, String item1, String item2) – Prints countries exporting both items.
@@ -69,5 +67,6 @@ exportsOfCountry(CSVParser parser, String country) – Returns the exports of a 
 
 countriesOverAmount(CSVParser parser, String amount) – Returns a list of countries exporting above a threshold.
 
-License
+**License:
+
 This project is for educational purposes and based on the Java Programming: Solving Problems with Software course.
